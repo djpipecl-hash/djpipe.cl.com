@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080812">
+<meta name="description" content="DJ PIPE — Felipe Molina. DJ de Perquenco, La Araucanía. Música, eventos y experiencias.">
+<title>DJ PIPE | Official Artist Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box} :root{--bg:#080812;--panel:#10101e;--text:#f5f5fb;--muted:#a4a4b8;--cyan:#31e7ff;--violet:#a855f7;--line:rgba(255,255,255,.12)} html{scroll-behavior:smooth;scroll-padding-top:85px} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;overflow-x:hidden} a{color:inherit;text-decoration:none} .noise{position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")} .topbar{height:76px;position:fixed;z-index:20;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;background:rgba(8,8,18,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)} .brand{font:900 27px 'Barlow Condensed',sans-serif;letter-spacing:1px}.brand span:first-child{color:var(--cyan)}.brand-dot{color:var(--violet)} nav{display:flex;align-items:center;gap:34px}nav a{font-size:10px;letter-spacing:1.4px;font-weight:800;color:#c7c7d3;transition:.2s}nav a:hover{color:var(--cyan)}nav .nav-cta{border:1px solid var(--cyan);padding:12px 16px;color:var(--cyan)}.menu-toggle{display:none;background:none;border:0;color:white;font-size:25px}.hero{height:100svh;min-height:650px;position:relative;display:flex;align-items:center;padding:100px 10vw 70px;overflow:hidden}.hero-image{position:absolute;inset:0;background:url('images/pool-session-01.jpeg') center 48%/cover no-repeat;filter:saturate(.8);transform:scale(1.02)}.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,15,.96) 0%,rgba(5,5,15,.75) 43%,rgba(5,5,15,.18) 100%),linear-gradient(0deg,#080812 0%,transparent 35%,rgba(8,8,18,.18))}.hero-content{position:relative;z-index:2;max-width:760px}.eyebrow{font-size:10px;letter-spacing:2.5px;font-weight:800;color:var(--cyan);margin:0 0 20px}.pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan);margin-right:9px}.hero h1{font:900 clamp(90px,17vw,210px)/.78 'Barlow Condensed',sans-serif;letter-spacing:-5px;margin:0 0 32px;text-shadow:0 0 35px rgba(49,231,255,.12)}.hero h1 span{color:transparent;-webkit-text-stroke:2px var(--cyan);text-shadow:0 0 30px rgba(49,231,255,.18)}.hero-sub{font:800 clamp(30px,5vw,58px)/.95 'Barlow Condensed',sans-serif;margin:0 0 18px}.hero-sub strong{color:var(--violet)}.hero-copy{font-size:13px;color:#c5c5d1;line-height:1.7}.hero-actions{display:flex;gap:12px;margin-top:30px}.button{display:inline-flex;align-items:center;gap:20px;padding:16px 21px;font-size:10px;letter-spacing:1.4px;font-weight:800;transition:.25s}.button-primary{background:var(--cyan);color:#050510;box-shadow:0 0 25px rgba(49,231,255,.18)}.button-primary:hover{transform:translateY(-3px);box-shadow:0 0 35px rgba(49,231,255,.4)}.button-ghost{border:1px solid rgba(255,255,255,.45)}.button-ghost:hover{border-color:var(--violet);color:var(--cyan)}.hero-side{position:absolute;right:5vw;top:50%;writing-mode:vertical-rl;font-size:9px;letter-spacing:3px;color:#ddd;z-index:2}.hero-side span{color:var(--cyan);margin-top:15px}.scroll-cue{position:absolute;bottom:35px;left:10vw;font-size:9px;letter-spacing:2px;color:#aaa;z-index:2}.scroll-cue span{color:var(--cyan);font-size:17px;margin-left:12px}.ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:19px 0;white-space:nowrap;background:#0d0d19}.ticker div{font:800 17px 'Barlow Condensed',sans-serif;letter-spacing:3px;word-spacing:9px;animation:marquee 28s linear infinite}.ticker i{font-style:normal;color:var(--violet);padding:0 20px}@keyframes marquee{to{transform:translateX(-30%)}}.section{padding:115px 10vw}.section-kicker{font-size:9px;letter-spacing:2px;color:var(--violet);font-weight:800;margin-bottom:48px}.bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.section-heading h2,.section-title-row h2,.team-grid h2,.music-content h2,.contact-section h2{font:900 clamp(48px,7vw,88px)/.9 'Barlow Condensed',sans-serif;letter-spacing:-1px;margin:0}.section-heading h2 span,.section-title-row h2 span,.team-grid h2 span,.music-content h2 span,.contact-section h2 span{color:var(--cyan)}.bio-text{max-width:560px;color:#b8b8c8;font-size:14px;line-height:1.9}.bio-text .lead{font-size:18px;color:#f3f3fa;line-height:1.6}.bio-text strong{color:white}.bio-signature{font:800 22px 'Barlow Condensed',sans-serif;color:var(--cyan);margin-top:28px}.bio-signature span{font:600 10px Inter,sans-serif;color:#8e8e9f;letter-spacing:1px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:75px;padding:28px 0}.stats div{padding-left:30px;border-left:1px solid var(--line)}.stats strong{font:800 48px 'Barlow Condensed',sans-serif;display:block}.stats strong span{color:var(--cyan)}.stats small{font-size:9px;letter-spacing:1.5px;color:#9999ac}.fineprint,.small-muted{font-size:10px;color:#77778d;line-height:1.7}.gallery-section{background:#0d0d19}.section-title-row{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}.section-title-row .eyebrow{margin-bottom:14px}.section-note{font-size:11px;color:#9292a6;line-height:1.8;max-width:260px}.gallery-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}.gallery-card{position:relative;padding:0;border:0;background:#171727;overflow:hidden;cursor:pointer;min-height:300px;text-align:left}.gallery-card img{width:100%;height:100%;min-height:300px;object-fit:cover;display:block;transition:transform .6s,filter .4s;filter:saturate(.8)}.gallery-card:hover img{transform:scale(1.045);filter:saturate(1.1)}.gallery-large img{object-position:center}.photo-label{position:absolute;bottom:0;left:0;right:0;padding:25px 22px;background:linear-gradient(transparent,rgba(0,0,0,.8));font:800 19px 'Barlow Condensed',sans-serif;letter-spacing:1px}.photo-label b{float:right;color:var(--cyan)}.music-band{position:relative;padding:105px 10vw;background:#111020;overflow:hidden}.music-glow{position:absolute;width:400px;height:400px;border-radius:50%;background:rgba(123,67,255,.17);filter:blur(100px);right:8%;top:-30%}.music-band .section-kicker,.music-content{position:relative}.music-content{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center}.music-content h2{font-size:clamp(65px,9vw,115px)}.music-content h2 span{color:var(--violet)}.music-info{max-width:430px;color:#c2c2d0;font-size:14px;line-height:1.8}.coming-soon{font-size:10px;letter-spacing:1.5px;color:var(--cyan);font-weight:800;margin-top:28px}.equipment-section{background:#080812}.equipment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.equipment-card{position:relative;background:#0b0b16;padding:30px;min-height:210px;transition:.25s}.equipment-card:hover{background:#121226;box-shadow:inset 0 0 35px rgba(49,231,255,.05)}.eq-number{position:absolute;right:22px;top:20px;font-size:10px;color:#68687d}.eq-icon{font-size:27px;color:var(--cyan);margin:15px 0 22px;text-shadow:0 0 18px rgba(49,231,255,.4)}.equipment-card h3{font:800 19px 'Barlow Condensed',sans-serif;letter-spacing:.6px;margin:0 0 10px}.equipment-card p{font-size:11px;color:#9292a6;line-height:1.7;margin:0}.team-section{padding:105px 10vw;background:#10101c}.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.team-grid h2{font-size:clamp(48px,7vw,82px)}.team-grid h2 span{color:var(--violet)}.team-copy>p{color:#b5b5c5;font-size:14px;line-height:1.8}.team-person{display:flex;align-items:center;gap:16px;padding:19px 0;border-bottom:1px solid var(--line)}.team-mark{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--cyan);color:var(--cyan);font:800 15px 'Barlow Condensed',sans-serif}.team-person strong,.team-person small{display:block}.team-person strong{font-size:11px;letter-spacing:1px}.team-person small{font-size:9px;color:#88889c;margin-top:6px;letter-spacing:.7px}.contact-section{position:relative;overflow:hidden;text-align:center;padding:115px 8vw 70px;background:#080812}.contact-orb{position:absolute;width:450px;height:450px;left:50%;top:20%;transform:translateX(-50%);border-radius:50%;background:rgba(49,231,255,.08);filter:blur(100px)}.contact-section>*:not(.contact-orb){position:relative}.contact-section .section-kicker{margin-bottom:40px}.contact-section h2{font-size:clamp(55px,9vw,105px)}.contact-section h2 span{color:var(--violet)}.contact-copy{font-size:13px;color:#aaaabc;margin:25px 0 30px}.contact-details{display:flex;justify-content:space-between;border-top:1px solid var(--line);margin-top:90px;padding-top:22px;font-size:9px;letter-spacing:1.3px;color:#88889c}.contact-details a{color:var(--cyan)}footer{padding:25px 6vw;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);background:#06060d}footer p,footer .back-top{font-size:8px;letter-spacing:1px;color:#77778a}.back-top:hover{color:var(--cyan)}.lightbox{display:none;position:fixed;z-index:50;inset:0;background:rgba(0,0,0,.94);align-items:center;justify-content:center;padding:35px}.lightbox.open{display:flex}.lightbox img{max-width:92vw;max-height:88vh;object-fit:contain;box-shadow:0 0 45px rgba(49,231,255,.12)}.lightbox-close{position:absolute;right:28px;top:15px;background:none;border:0;color:white;font-size:42px;cursor:pointer}.reveal{animation:rise .9s both}@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}@media(max-width:800px){.topbar{padding:0 6vw}.menu-toggle{display:block}nav{display:none;position:absolute;top:76px;left:0;right:0;background:#0b0b16;padding:25px 7vw 30px;flex-direction:column;align-items:flex-start;gap:24px;border-bottom:1px solid var(--line)}nav.open{display:flex}.hero{padding-left:7vw;padding-right:7vw;min-height:620px}.hero-shade{background:linear-gradient(90deg,rgba(5,5,15,.93),rgba(5,5,15,.48)),linear-gradient(0deg,#080812,transparent 50%)}.hero-side{display:none}.scroll-cue{left:7vw}.section,.music-band,.team-section{padding:85px 7vw}.bio-grid,.music-content,.team-grid{grid-template-columns:1fr;gap:35px}.section-title-row{align-items:flex-start;flex-direction:column;gap:10px}.gallery-grid{grid-template-columns:1fr}.gallery-card,.gallery-card img{min-height:250px}.equipment-grid{grid-template-columns:repeat(2,1fr)}.stats{margin-top:45px}.stats div{padding-left:12px}.stats strong{font-size:38px}.stats small{font-size:8px}.contact-section{padding:90px 7vw 55px}.contact-details{margin-top:65px}footer{gap:15px;flex-wrap:wrap}footer p{order:3;width:100%}}@media(max-width:460px){.hero h1{font-size:100px}.hero-actions{flex-wrap:wrap}.equipment-grid{grid-template-columns:1fr}.equipment-card{min-height:175px}.stats strong{font-size:32px}.stats small{letter-spacing:.5px}.contact-details{flex-direction:column;gap:14px;align-items:center}.ticker div{font-size:14px}}
+
+
+/* DJ PIPE — nuevas pestañas, inicio extendido y reservas */
+:root{--lime:#c5ff4a;--blue:#36d9ff}
+.topbar{position:sticky;top:0;height:auto;min-height:76px;padding:12px 5vw;gap:20px}
+.topbar .brand{flex-shrink:0}
+#nav{display:flex;align-items:center;gap:clamp(8px,1.5vw,22px);flex-wrap:wrap;justify-content:flex-end}
+#nav button{font:800 9px Inter,sans-serif;letter-spacing:1px;color:#c7c7d3;background:transparent;border:0;padding:10px 8px;cursor:pointer}
+#nav button:hover,#nav button.active{color:var(--cyan)}
+#nav button.nav-cta{border:1px solid var(--cyan);padding:11px 14px;color:var(--cyan)}
+.menu-toggle{display:none}
+.site-page{display:none;animation:pageIn .35s ease both}
+.site-page.active{display:block}
+@keyframes pageIn{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+.hero{height:min(790px,calc(100svh - 76px));min-height:590px}
+.hero-image{background-position:center 35%}
+.hero h1 span{color:var(--lime);-webkit-text-stroke:0;text-shadow:0 0 30px rgba(197,255,74,.2)}
+.hero-sub strong,.section-heading h2 span,.section-title-row h2 span,.team-grid h2 span,.music-content h2 span,.contact-section h2 span{color:var(--lime)}
+.pulse{background:var(--lime);box-shadow:0 0 12px var(--lime)}
+.button-primary{background:var(--lime);box-shadow:0 0 25px rgba(197,255,74,.18)}
+.button-primary:hover{box-shadow:0 0 35px rgba(197,255,74,.4)}
+.button-ghost:hover,.photo-label b,.eq-icon,.coming-soon,.contact-details a{color:var(--lime)}
+.ticker i{color:var(--lime)}
+.section-kicker{color:var(--lime)}
+.site-page .section{padding-top:95px;padding-bottom:95px}
+.home-intro{padding:90px 10vw 30px;background:#0b0b16}
+.home-intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:stretch}
+.home-panel{border:1px solid var(--line);background:linear-gradient(145deg,rgba(49,231,255,.08),rgba(197,255,74,.045));padding:30px}
+.home-panel h3{font:800 28px 'Barlow Condensed',sans-serif;margin:10px 0}
+.home-panel p{font-size:13px;line-height:1.8;color:#b8b8c8}
+.home-photo{min-height:300px;background:#111;overflow:hidden}
+.home-photo img{width:100%;height:100%;min-height:300px;object-fit:cover;display:block}
+.home-links{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.home-link{border:1px solid var(--line);background:#10101e;padding:18px;color:#eee;cursor:pointer;text-align:left;transition:.2s}
+.home-link:hover{border-color:var(--lime);transform:translateY(-2px)}
+.home-link strong{display:block;font:800 17px 'Barlow Condensed',sans-serif;margin:8px 0}
+.home-link small{color:#9999ac;font-size:10px;line-height:1.5}
+.mini-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+.mini-gallery button{padding:0;border:1px solid var(--line);background:#111;overflow:hidden;cursor:pointer;aspect-ratio:4/3}
+.mini-gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
+.mini-gallery button:hover img{transform:scale(1.05)}
+.gallery-grid.four{grid-template-columns:repeat(2,1fr)}
+.gallery-grid.four .gallery-card{min-height:270px}
+.gallery-grid.four .gallery-card img{min-height:270px;object-fit:cover}
+.vip-banner{padding:65px;background:linear-gradient(120deg,rgba(49,231,255,.12),rgba(168,85,247,.13)),#111020;border:1px solid var(--line)}
+.vip-banner h2{font:900 clamp(48px,8vw,90px)/.9 'Barlow Condensed',sans-serif;margin:15px 0}
+.vip-banner h2 span{color:var(--lime)}
+.booking-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:start}
+.booking-card,.booking-aside,.policy-card{background:#10101e;border:1px solid var(--line);padding:26px}
+.booking-card h3,.booking-aside h3,.policy-card h3{font:800 23px 'Barlow Condensed',sans-serif;margin:0 0 14px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:grid;gap:7px;margin-bottom:14px}
+.field label{font-size:10px;letter-spacing:1px;font-weight:800;color:#c8c8d4}
+.field input,.field select,.field textarea{width:100%;background:#080812;color:#f5f5fb;border:1px solid var(--line);padding:13px;border-radius:0;outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--lime)}
+.field textarea{min-height:105px;resize:vertical}
+.service-checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0 18px}
+.service-checks label,.accept-policy{display:flex;gap:9px;align-items:flex-start;color:#c5c5d1;font-size:11px;line-height:1.6}
+.service-checks input,.accept-policy input{accent-color:var(--lime);margin-top:3px}
+.policy-scroll{max-height:210px;overflow:auto;padding:15px;background:#080812;border:1px solid var(--line);font-size:11px;line-height:1.8;color:#aaaabc;margin:16px 0}
+.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.form-actions button{border:0;cursor:pointer}
+.form-note{font-size:10px;color:#85859a;line-height:1.7;margin-top:14px}
+.booking-aside p,.policy-card p{font-size:12px;line-height:1.8;color:#aaaabc}
+.booking-aside .contact-row{padding:13px 0;border-bottom:1px solid var(--line);font-size:11px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.contact-methods{max-width:660px;margin:35px auto 0;display:grid;gap:10px}
+.contact-method{display:flex;align-items:center;gap:16px;text-align:left;border:1px solid var(--line);padding:17px;background:rgba(255,255,255,.025)}
+.contact-method:hover{border-color:var(--lime)}
+.contact-method small,.contact-method strong{display:block}
+.contact-method small{font-size:9px;color:#8e8e9f;letter-spacing:1px}
+.contact-method strong{font-size:13px;margin-top:4px}
+.contact-method> b{margin-left:auto;color:var(--lime)}
+.contact-icon{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--lime);color:var(--lime)}
+.contact-section .contact-details{margin-top:60px}
+.policy-list{display:grid;gap:0}
+.policy-item{padding:20px 0;border-bottom:1px solid var(--line)}
+.policy-item h3{margin:0 0 8px;color:#fff}
+.policy-item p{margin:0;color:#aaaabc;font-size:12px;line-height:1.8}
+footer{flex-wrap:wrap}
+@media(max-width:1000px){.topbar{align-items:flex-start;flex-direction:column}.topbar nav{justify-content:flex-start}.home-links{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.topbar{position:sticky;flex-direction:row;align-items:center;min-height:76px;padding:12px 6vw}.menu-toggle{display:block}#nav{display:none;position:absolute;top:100%;left:0;right:0;background:#0b0b16;padding:20px 7vw 25px;flex-direction:column;align-items:stretch;gap:8px;border-bottom:1px solid var(--line)}#nav.open{display:flex}#nav button{text-align:left;padding:13px 8px}.home-intro{padding:75px 7vw 25px}.home-intro-grid,.booking-layout{grid-template-columns:1fr}.mini-gallery{grid-template-columns:repeat(2,1fr)}.gallery-grid.four{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.form-grid,.service-checks{grid-template-columns:1fr}.home-links{grid-template-columns:1fr 1fr}.vip-banner{padding:30px}.gallery-grid.four{grid-template-columns:1fr}.gallery-grid.four .gallery-card,.gallery-grid.four .gallery-card img{min-height:230px}}
+
+</style>
+</head>
+<body>
+<div class="noise"></div>
+<header class="topbar">
+  <a class="brand" href="#" data-page="inicio" aria-label="DJ PIPE inicio"><span>DJ</span> PIPE<span class="brand-dot">.</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav id="nav" aria-label="Navegación principal">
+    <button class="active" data-page="inicio">INICIO</button>
+    <button data-page="sobre-mi">SOBRE MÍ</button>
+    <button data-page="equipo">MI EQUIPO</button>
+    <button data-page="servicios">SERVICIOS</button>
+    <button data-page="equipamiento">EQUIPAMIENTO</button>
+    <button data-page="galeria">GALERÍA</button>
+    <button data-page="vip">PIPE VIP</button>
+    <button data-page="reservas" class="nav-cta">AGENDA TU FECHA ↗</button>
+    <button data-page="contacto">CONTACTO</button>
+    <button data-page="politicas">POLÍTICAS</button>
+  </nav>
+</header>
+
+<main>
+<section class="site-page active" id="inicio">
+  <section class="hero">
+    <div class="hero-image"></div><div class="hero-shade"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow"><span class="pulse"></span> DJ · EVENTOS · LA ARAUCANÍA, CHILE</p>
+      <h1>DJ <span>PIPE</span></h1>
+      <p class="hero-sub">LA MÚSICA SE VIVE<br><strong>DIFERENTE.</strong></p>
+      <p class="hero-copy">Felipe Molina · DJ desde Perquenco, Región de La Araucanía.</p>
+      <div class="hero-actions">
+        <button class="button button-primary" data-page="galeria">VER GALERÍA <b>↘</b></button>
+        <button class="button button-ghost" data-page="reservas">AGENDA TU FECHA</button>
+      </div>
+    </div>
+    <div class="hero-side">OFFICIAL ARTIST WEBSITE <span>2026</span></div>
+    <div class="scroll-cue">DESCUBRE DJ PIPE <span>↓</span></div>
+  </section>
+  <section class="ticker"><div>TECH HOUSE <i>✦</i> ELECTRÓNICA <i>✦</i> TECHNO <i>✦</i> REGGAETÓN <i>✦</i> GUARACHA <i>✦</i> DJ PIPE <i>✦</i></div></section>
+
+  <section class="section bio-section" id="bio-home">
+    <div class="section-kicker">01 / EL ARTISTA</div>
+    <div class="bio-grid">
+      <div class="section-heading reveal"><p class="eyebrow">CONOCE MI HISTORIA</p><h2>DE PERQUENCO<br><span>AL ESCENARIO.</span></h2></div>
+      <div class="bio-text reveal">
+        <p class="lead">Soy <strong>Felipe Molina</strong>, conocido artísticamente como <strong>DJ PIPE</strong>, DJ de Perquenco, en la Región de La Araucanía.</p>
+        <p>La música y las mezclas son parte de mi camino desde hace años. Mi propuesta busca conectar con el público, leer la energía de cada evento y crear momentos que se recuerden.</p>
+        <p>Trabajo con distintos estilos: Tech House, Techno, Electrónica, Reggaetón y Guaracha, adaptando cada presentación al tipo de público y actividad.</p>
+        <div class="bio-signature">DJ PIPE<span> · FELIPE MOLINA</span></div>
+        <button class="button button-ghost" data-page="sobre-mi">CONOCE MÁS SOBRE MÍ ↗</button>
+      </div>
+    </div>
+    <div class="stats"><div><strong>7<span>+</span></strong><small>AÑOS EN LA MÚSICA*</small></div><div><strong>05</strong><small>ESTILOS MUSICALES</small></div><div><strong>IX</strong><small>REGIÓN DE LA ARAUCANÍA</small></div></div>
+    <p class="fineprint">*Trayectoria indicada por el artista.</p>
+  </section>
+
+  <section class="home-intro">
+    <div class="section-kicker">02 / UN VISTAZO A DJ PIPE</div>
+    <div class="home-intro-grid">
+      <div class="home-photo"><img src="images/foto-djpipe-01.jpeg" alt="Felipe Molina, DJ PIPE, junto a su controladora DJ"></div>
+      <div class="home-panel"><p class="eyebrow">MI PROYECTO · MI IDENTIDAD</p><h3>UN POCO DE TODO, EN UN SOLO LUGAR.</h3><p>Conoce mi biografía, los estilos que trabajo, el equipo que utilizo, los servicios disponibles y los momentos que forman parte de DJ PIPE. En cada pestaña encontrarás información más completa.</p><button class="button button-primary" data-page="sobre-mi">DESCUBRIR EL PROYECTO ↗</button></div>
+    </div>
+    <div class="home-links">
+      <button class="home-link" data-page="equipo">01 <strong>MI EQUIPO</strong><small>Organización y apoyo de producción.</small></button>
+      <button class="home-link" data-page="servicios">02 <strong>SERVICIOS</strong><small>Música, mezcla, luces y efectos.</small></button>
+      <button class="home-link" data-page="equipamiento">03 <strong>EQUIPAMIENTO</strong><small>DDJ-SB3, computador y luces.</small></button>
+      <button class="home-link" data-page="vip">04 <strong>PIPE VIP</strong><small>Novedades, mezclas y adelantos.</small></button>
+    </div>
+  </section>
+
+  <section class="section gallery-section">
+    <div class="section-kicker">03 / EN ACCIÓN</div>
+    <div class="section-title-row"><div><p class="eyebrow">FOTOGRAFÍAS Y MOMENTOS</p><h2>LA <span>GALERÍA.</span></h2></div><p class="section-note">Cuatro fotografías del proyecto y de mi trabajo detrás de la cabina.</p></div>
+    <div class="mini-gallery">
+      <button data-lightbox="images/foto-djpipe-01.jpeg"><img src="images/foto-djpipe-01.jpeg" alt="DJ PIPE con su controladora"></button>
+      <button data-lightbox="images/foto-djpipe-02.jpeg"><img src="images/foto-djpipe-02.jpeg" alt="Controladora DJ y computador"></button>
+      <button data-lightbox="images/foto-djpipe-03.jpeg"><img src="images/foto-djpipe-03.jpeg" alt="DJ trabajando durante una Pool Party"></button>
+      <button data-lightbox="images/foto-djpipe-04.jpeg"><img src="images/foto-djpipe-04.jpeg" alt="DJ desde atrás en una presentación al aire libre"></button>
+    </div>
+    <div style="margin-top:25px"><button class="button button-ghost" data-page="galeria">VER GALERÍA COMPLETA ↗</button></div>
+  </section>
+
+  <section class="music-band">
+    <div class="music-glow"></div><div class="section-kicker">04 / SONIDO</div>
+    <div class="music-content"><div><p class="eyebrow">MEZCLAS Y PRODUCCIÓN</p><h2>FEEL THE<br><span>ENERGY.</span></h2></div><div class="music-info"><p>Una selección musical que se adapta al momento: electrónica, Tech House, Techno, Reggaetón y Guaracha.</p><p class="coming-soon"><span class="pulse"></span> MIXES Y TRACKS — PRÓXIMAMENTE</p><p class="small-muted">La sección queda preparada para sumar enlaces de sets y mezclas.</p></div></div>
+  </section>
+  <section class="section equipment-section">
+    <div class="section-kicker">05 / MI SETUP</div><div class="section-title-row"><div><p class="eyebrow">HERRAMIENTAS DE TRABAJO</p><h2>MI <span>EQUIPO.</span></h2></div><p class="section-note">Tecnología y elementos que forman parte del trabajo de DJ PIPE.</p></div>
+    <div class="equipment-grid">
+      <article class="equipment-card"><div class="eq-number">01</div><div class="eq-icon">▤</div><h3>PIONEER DDJ-SB3</h3><p>Controladora DJ para mezcla y manejo de pistas.</p></article>
+      <article class="equipment-card"><div class="eq-number">02</div><div class="eq-icon">◫</div><h3>COMPUTADOR + VIRTUALDJ</h3><p>Plataforma de trabajo y preparación musical.</p></article>
+      <article class="equipment-card"><div class="eq-number">03</div><div class="eq-icon">✳</div><h3>ILUMINACIÓN</h3><p>Cabezas móviles y paneles LED.</p></article>
+    </div>
+    <div style="margin-top:24px"><button class="button button-ghost" data-page="equipamiento">VER TODO EL EQUIPAMIENTO ↗</button></div>
+  </section>
+  <section class="team-section"><div class="section-kicker">06 / RESPALDO</div><div class="team-grid"><div><p class="eyebrow">TRABAJO EN EQUIPO</p><h2>DETRÁS DE<br><span>CADA EVENTO.</span></h2></div><div class="team-copy"><p>DJ PIPE desarrolla su proyecto con apoyo familiar y coordinación de producción.</p><div class="team-person"><span class="team-mark">FM</span><div><strong>FELIPE MOLINA</strong><small>DJ PRINCIPAL · DIRECCIÓN MUSICAL</small></div></div><div class="team-person"><span class="team-mark">AF</span><div><strong>APOYO FAMILIAR</strong><small>SUPERVISIÓN Y ORGANIZACIÓN ADULTA</small></div></div><button class="button button-ghost" data-page="equipo">CONOCE AL EQUIPO ↗</button></div></div></section>
+  <section class="contact-section"><div class="contact-orb"></div><div class="section-kicker">07 / HABLEMOS</div><p class="eyebrow">EVENTOS · PRESENTACIONES · COLABORACIONES</p><h2>¿ARMAMOS<br><span>EL PRÓXIMO SHOW?</span></h2><p class="contact-copy">Revisa la disponibilidad y envía tu solicitud de fecha.</p><button class="button button-primary" data-page="reservas">AGENDA TU FECHA ↗</button><div class="contact-details"><span>PERQUENCO · LA ARAUCANÍA · CHILE</span><button data-page="contacto">DATOS DE CONTACTO ↗</button></div></section>
+</section>
+
+<section class="site-page" id="sobre-mi">
+  <section class="section"><div class="section-kicker">01 / EL ARTISTA</div><div class="bio-grid"><div><p class="eyebrow">CONOCE MI HISTORIA</p><h2 class="section-heading">DE PERQUENCO<br><span>AL ESCENARIO.</span></h2><img src="images/foto-djpipe-01.jpeg" alt="DJ PIPE" style="width:100%;margin-top:30px"></div><div class="bio-text"><p class="lead">Soy Felipe Molina, conocido artísticamente como DJ PIPE, DJ de Perquenco, Región de La Araucanía.</p><p>La música y las mezclas son parte de mi camino desde hace años. Mi propuesta busca conectar con el público, leer la energía de cada evento y crear momentos que se recuerden.</p><p>Trabajo con Tech House, Techno, Electrónica, Reggaetón y Guaracha, adaptando la selección musical a cada ocasión.</p><p>He participado en experiencias como el Festival de la Cerveza y Pool Party. Mi objetivo es seguir creciendo, desarrollar mi proyecto y llegar a nuevos escenarios, festivales y eventos.</p><div class="bio-signature">DJ PIPE<span> · FELIPE MOLINA</span></div><div><span class="tag">TECH HOUSE</span><span class="tag">TECHNO</span><span class="tag">ELECTRÓNICA</span><span class="tag">REGGAETÓN</span><span class="tag">GUARACHA</span></div></div></div></section>
+</section>
+
+<section class="site-page" id="equipo">
+  <section class="section"><div class="section-kicker">02 / ORGANIZACIÓN</div><p class="eyebrow">RESPALDO Y COORDINACIÓN</p><h2 class="section-heading">MI <span>EQUIPO DE TRABAJO.</span></h2><p class="section-note">Un proyecto musical que cuenta con apoyo familiar y supervisión adulta.</p>
+    <div class="equipment-grid" style="margin-top:40px">
+      <article class="equipment-card"><div class="eq-icon">🎧</div><h3>FELIPE MOLINA · DJ PIPE</h3><p>DJ principal. Responsable de la música, las mezclas y la presentación artística.</p></article>
+      <article class="equipment-card"><div class="eq-icon">✦</div><h3>ADMINISTRACIÓN Y SUPERVISIÓN</h3><p>Apoyo adulto responsable en la coordinación general, organización y supervisión de las actividades.</p></article>
+      <article class="equipment-card"><div class="eq-icon">◈</div><h3>APOYO DE PRODUCCIÓN</h3><p>Colaboración en tareas de coordinación y apoyo operativo, según las necesidades de cada evento.</p></article>
+    </div>
+    <div class="team-section" style="margin-top:35px;padding:35px"><h3>Coordinación del equipo</h3><p class="bio-text">Se contempla el uso de credenciales de identificación y radios de comunicación cuando corresponda. Las funciones y la cantidad de personal se coordinan previamente con la persona responsable del evento.</p><div class="mini-gallery"><button data-lightbox="images/foto-djpipe-02.jpeg"><img src="images/foto-djpipe-02.jpeg" alt="Equipo DJ"></button><button data-lightbox="images/foto-djpipe-04.jpeg"><img src="images/foto-djpipe-04.jpeg" alt="Evento al aire libre"></button></div></div>
+  </section>
+</section>
+
+<section class="site-page" id="servicios">
+  <section class="section"><div class="section-kicker">03 / LO QUE OFREZCO</div><p class="eyebrow">SERVICIOS DJ PIPE</p><h2 class="section-heading">MÚSICA PARA<br><span>TU EVENTO.</span></h2><div class="equipment-grid" style="margin-top:38px">
+    <article class="equipment-card"><div class="eq-icon">♫</div><h3>MÚSICA Y MEZCLA EN VIVO</h3><p>Selección musical y mezclas adaptadas al estilo y público del evento.</p></article>
+    <article class="equipment-card"><div class="eq-icon">✳</div><h3>ILUMINACIÓN</h3><p>Luces para acompañar la música y crear ambiente en el espacio.</p></article>
+    <article class="equipment-card"><div class="eq-icon">〰</div><h3>MÁQUINA DE HUMO</h3><p>Efecto ambiental para complementar la iluminación, sujeto a las condiciones del recinto.</p></article>
+    <article class="equipment-card"><div class="eq-icon">▤</div><h3>CABINA DJ</h3><p>Controladora y espacio de trabajo para realizar la presentación.</p></article>
+    <article class="equipment-card"><div class="eq-icon">🎉</div><h3>EVENTOS Y CELEBRACIONES</h3><p>Consultas para galas, fiestas juveniles, cumpleaños y eventos particulares.</p></article>
+    <article class="equipment-card"><div class="eq-icon">⌖</div><h3>LA ARAUCANÍA</h3><p>Perquenco y consultas para otras comunas de la región, según disponibilidad.</p></article>
+  </div><div class="policy-scroll"><strong>IMPORTANTE:</strong> El servicio no incluye amplificación ni sistema de sonido. Los requerimientos técnicos del lugar deben conversarse antes de confirmar una fecha.</div><button class="button button-primary" data-page="reservas">CONSULTAR UNA FECHA ↗</button></section>
+</section>
+
+<section class="site-page" id="equipamiento">
+  <section class="section"><div class="section-kicker">04 / SETUP DJ PIPE</div><p class="eyebrow">HERRAMIENTAS DE TRABAJO</p><h2 class="section-heading">MI <span>EQUIPAMIENTO.</span></h2>
+    <div class="gallery-grid" style="margin:35px 0"><button class="gallery-card" data-lightbox="images/foto-djpipe-02.jpeg"><img src="images/foto-djpipe-02.jpeg" alt="Controladora Pioneer DJ y computador"></button><button class="gallery-card" data-lightbox="images/foto-djpipe-01.jpeg"><img src="images/foto-djpipe-01.jpeg" alt="Felipe con su controlador DJ"></button></div>
+    <div class="equipment-grid">
+      <article class="equipment-card"><div class="eq-number">01</div><div class="eq-icon">▤</div><h3>PIONEER DDJ-SB3</h3><p>Controladora DJ utilizada para mezclar y controlar pistas.</p></article>
+      <article class="equipment-card"><div class="eq-number">02</div><div class="eq-icon">◫</div><h3>COMPUTADOR</h3><p>Equipo de trabajo para preparar y ejecutar sesiones.</p></article>
+      <article class="equipment-card"><div class="eq-number">03</div><div class="eq-icon">♫</div><h3>VIRTUALDJ</h3><p>Software utilizado para organizar y mezclar música.</p></article>
+      <article class="equipment-card"><div class="eq-number">04</div><div class="eq-icon">✳</div><h3>2 CABEZAS MÓVILES</h3><p>Iluminación móvil para ambientación de eventos.</p></article>
+      <article class="equipment-card"><div class="eq-number">05</div><div class="eq-icon">▦</div><h3>2 PARES DE PANELES LED</h3><p>Paneles LED para efectos de iluminación y ambiente.</p></article>
+      <article class="equipment-card"><div class="eq-number">06</div><div class="eq-icon">〰</div><h3>MÁQUINA DE HUMO</h3><p>Efecto visual, sujeto a las condiciones y autorización del recinto.</p></article>
+      <article class="equipment-card"><div class="eq-number">07</div><div class="eq-icon">▣</div><h3>DISCO EXTERNO</h3><p>Almacenamiento de música y archivos de trabajo.</p></article>
+      <article class="equipment-card"><div class="eq-number">08</div><div class="eq-icon">⌁</div><h3>CONTROL DMX</h3><p>Gestión de iluminación y coordinación de efectos.</p></article>
+    </div><p class="fineprint">El montaje, conexiones, energía disponible y compatibilidad del recinto deben revisarse antes de cada presentación.</p>
+  </section>
+</section>
+
+<section class="site-page" id="galeria">
+  <section class="section gallery-section"><div class="section-kicker">05 / FOTOGRAFÍAS</div><div class="section-title-row"><div><p class="eyebrow">DJ PIPE · DETRÁS DE LA CABINA</p><h2>LA <span>GALERÍA.</span></h2></div><p class="section-note">Fotografías originales compartidas para el sitio web.</p></div>
+    <div class="gallery-grid four">
+      <button class="gallery-card" data-lightbox="images/foto-djpipe-01.jpeg"><img src="images/foto-djpipe-01.jpeg" alt="DJ PIPE con su controladora"><span class="photo-label">DJ PIPE <b>↗</b></span></button>
+      <button class="gallery-card" data-lightbox="images/foto-djpipe-02.jpeg"><img src="images/foto-djpipe-02.jpeg" alt="Controladora DJ y computador"><span class="photo-label">MI SETUP <b>↗</b></span></button>
+      <button class="gallery-card" data-lightbox="images/foto-djpipe-03.jpeg"><img src="images/foto-djpipe-03.jpeg" alt="DJ trabajando durante una Pool Party"><span class="photo-label">POOL PARTY <b>↗</b></span></button>
+      <button class="gallery-card" data-lightbox="images/foto-djpipe-04.jpeg"><img src="images/foto-djpipe-04.jpeg" alt="DJ desde atrás en evento al aire libre"><span class="photo-label">EN VIVO <b>↗</b></span></button>
+    </div>
+  </section>
+</section>
+
+<section class="site-page" id="vip">
+  <section class="section"><div class="section-kicker">06 / CONTENIDO ESPECIAL</div><div class="vip-banner"><p class="eyebrow">PIPE INSIDERS</p><h2>BIENVENIDO A<br><span>PIPE VIP.</span></h2><p class="bio-text">Un espacio para compartir novedades, próximas fechas, mezclas, adelantos y contenido especial del proyecto DJ PIPE.</p><button class="button button-primary" data-page="contacto">MANTENTE CONECTADO ↗</button></div>
+    <div class="equipment-grid" style="margin-top:25px"><article class="equipment-card"><div class="eq-icon">♫</div><h3>MEZCLAS Y ADELANTOS</h3><p>Próximamente, avances y sesiones musicales.</p></article><article class="equipment-card"><div class="eq-icon">▦</div><h3>FECHAS Y NOVEDADES</h3><p>Información sobre eventos y presentaciones.</p></article><article class="equipment-card"><div class="eq-icon">✦</div><h3>CONTENIDO ESPECIAL</h3><p>Material y noticias del proyecto.</p></article></div>
+  </section>
+</section>
+
+<section class="site-page" id="reservas">
+  <section class="section"><div class="section-kicker">07 / BOOKING</div><p class="eyebrow">SOLICITUD DE FECHA</p><h2 class="section-heading">AGENDA <span>TU FECHA.</span></h2><p class="bio-text">Completa los datos para enviar tu solicitud. La fecha no queda confirmada hasta recibir respuesta de DJ PIPE y coordinación de la persona adulta responsable.</p>
+    <div class="booking-layout" style="margin-top:35px">
+      <div class="booking-card">
+        <h3>DATOS DEL EVENTO</h3>
+        <form id="bookingForm">
+          <div class="form-grid">
+            <div class="field"><label for="nombre">NOMBRE Y APELLIDO *</label><input id="nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre"></div>
+            <div class="field"><label for="email">TU CORREO ELECTRÓNICO *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="nombre@correo.com"></div>
+            <div class="field"><label for="fecha">FECHA DEL EVENTO *</label><input id="fecha" name="fecha" type="date" required></div>
+            <div class="field"><label for="tipo">TIPO DE EVENTO *</label><select id="tipo" name="tipo" required><option value="">Selecciona</option><option>Cumpleaños</option><option>Fiesta juvenil</option><option>Gala</option><option>Evento particular</option><option>Evento municipal</option><option>Festival</option><option>Otro</option></select></div>
+            <div class="field"><label for="comuna">LUGAR / COMUNA *</label><input id="comuna" name="comuna" required placeholder="Ej. Perquenco"></div>
+            <div class="field"><label for="hora">HORARIO APROXIMADO</label><input id="hora" name="hora" placeholder="Ej. 20:00 a 00:00"></div>
+          </div>
+          <div class="field"><label>SERVICIOS QUE TE INTERESAN</label></div>
+          <div class="service-checks">
+            <label><input type="checkbox" name="servicios" value="Música y mezcla en vivo"> Música y mezcla en vivo</label>
+            <label><input type="checkbox" name="servicios" value="Iluminación"> Iluminación</label>
+            <label><input type="checkbox" name="servicios" value="Máquina de humo"> Máquina de humo</label>
+            <label><input type="checkbox" name="servicios" value="Cabina DJ"> Cabina DJ</label>
+          </div>
+          <div class="field"><label for="detalles">DETALLES DEL EVENTO</label><textarea id="detalles" name="detalles" placeholder="Cantidad aproximada de asistentes, lugar, tipo de música y otros detalles..."></textarea></div>
+          <div class="policy-scroll"><strong>ANTES DE ENVIAR:</strong><br>• Esta solicitud no confirma una reserva.<br>• La presentación requiere autorización de su padre, madre o tutor y supervisión adulta.<br>• El servicio no incluye amplificación ni sistema de sonido.<br>• El horario se acuerda previamente. Como referencia, la planificación no se extenderá más allá de las 02:00 a. m., sujeto a autorización adulta, normas del recinto y legislación aplicable.<br>• El acceso a la cabina y al equipamiento es exclusivo del personal autorizado.<br>• Tus datos se utilizarán para responder y coordinar la solicitud. Esta página no almacena datos en una base de datos.</div>
+          <label class="accept-policy"><input type="checkbox" id="acepta" required><span>He leído y acepto las <a href="#" data-page="politicas" style="color:var(--lime);text-decoration:underline">políticas y condiciones</a>. *</span></label>
+          <div class="form-actions"><button class="button button-primary" type="submit">ENVIAR POR WHATSAPP ↗</button><button class="button button-ghost" type="button" id="emailSubmit">ENVIAR POR CORREO ↗</button></div>
+          <p class="form-note">Se abrirá WhatsApp o tu aplicación de correo con el mensaje preparado. Debes presionar “Enviar” en esa aplicación. No se envía automáticamente ni se bloquean fechas en un calendario compartido.</p>
+        </form>
+      </div>
+      <aside class="booking-aside"><h3>INFORMACIÓN DE BOOKING</h3><p>Indica los datos con claridad para poder revisar disponibilidad, condiciones técnicas y características del evento.</p><div class="contact-row"><span>Correo</span><strong>djpipe.cl@gmail.com</strong></div><div class="contact-row"><span>WhatsApp</span><strong>+56 9 5025 8000</strong></div><div class="contact-row"><span>Base</span><strong>Perquenco, Chile</strong></div><p class="form-note">La fecha se confirma únicamente después de la respuesta directa de DJ PIPE y la coordinación correspondiente.</p></aside>
+    </div>
+  </section>
+</section>
+
+<section class="site-page" id="contacto">
+  <section class="contact-section"><div class="contact-orb"></div><div class="section-kicker">08 / HABLEMOS</div><p class="eyebrow">EVENTOS · PRESENTACIONES · COLABORACIONES</p><h2>CONTACTA A<br><span>DJ PIPE.</span></h2><p class="contact-copy">Para consultas, propuestas y solicitudes de eventos.</p>
+    <div class="contact-methods">
+      <a class="contact-method" href="mailto:djpipe.cl@gmail.com"><span class="contact-icon">✉</span><span><small>CORREO ELECTRÓNICO</small><strong>djpipe.cl@gmail.com</strong></span><b>↗</b></a>
+      <a class="contact-method" href="https://wa.me/56950258000" target="_blank" rel="noopener"><span class="contact-icon">◉</span><span><small>WHATSAPP DJ PIPE</small><strong>+56 9 5025 8000</strong></span><b>↗</b></a>
+      <a class="contact-method" href="https://www.mavelpoint.com/artist/dj-pipe" target="_blank" rel="noopener"><span class="contact-icon">↗</span><span><small>PRESS KIT</small><strong>DJ PIPE · Mavelpoint</strong></span><b>↗</b></a>
+    </div>
+    <div class="contact-details"><span>PERQUENCO · REGIÓN DE LA ARAUCANÍA · CHILE</span><a href="#" data-page="reservas">SOLICITAR UNA FECHA ↗</a></div>
+  </section>
+</section>
+
+<section class="site-page" id="politicas">
+  <section class="section"><div class="section-kicker">09 / INFORMACIÓN IMPORTANTE</div><p class="eyebrow">CONDICIONES DEL SERVICIO</p><h2 class="section-heading">POLÍTICAS Y<br><span>PRIVACIDAD.</span></h2>
+    <div class="policy-card" style="margin-top:35px"><div class="policy-list">
+      <div class="policy-item"><h3>1. Acceso a cabina y equipamiento</h3><p>El acceso a la cabina y a los equipos es exclusivo de las personas autorizadas. La persona que contrata puede coordinar con el responsable, pero no debe manipular, mover, desconectar ni utilizar los equipos sin autorización.</p></div>
+      <div class="policy-item"><h3>2. Respeto durante la presentación</h3><p>Se solicita respetar el espacio de trabajo del DJ. Evita empujar, tirar de los equipos, distraer o interrumpir la presentación. Cualquier solicitud debe comunicarse mediante la persona encargada de coordinación.</p></div>
+      <div class="policy-item"><h3>3. Supervisión y horarios</h3><p>DJ PIPE es un proyecto liderado por una persona menor de edad. Las presentaciones requieren autorización de su padre, madre o tutor y supervisión adulta. Los horarios se acuerdan previamente y deben cumplir las normas del recinto y la legislación aplicable. Las 02:00 a. m. son un límite de planificación, no una garantía de horario.</p></div>
+      <div class="policy-item"><h3>4. Servicios incluidos y exclusiones</h3><p>Los servicios pueden incluir música y mezcla en vivo, cabina DJ, iluminación y máquina de humo, de acuerdo con lo conversado. No se incluye amplificación ni sistema de sonido.</p></div>
+      <div class="policy-item"><h3>5. Coordinación del equipo</h3><p>La organización puede contemplar credenciales y radios de comunicación para facilitar la coordinación. Las funciones y el personal se definen según cada evento.</p></div>
+      <div class="policy-item"><h3>6. Cambios y cancelaciones</h3><p>Cualquier cambio de fecha, horario, lugar o condiciones debe informarse con anticipación. Una solicitud no constituye una reserva confirmada. La confirmación se realiza directamente después de revisar disponibilidad y condiciones.</p></div>
+      <div class="policy-item"><h3>7. Seguridad y condiciones del recinto</h3><p>La instalación debe realizarse en un espacio seguro, con conexiones eléctricas adecuadas, ventilación y autorización del recinto para los efectos utilizados. Si las condiciones no son seguras, el servicio puede ajustarse o no realizarse.</p></div>
+      <div class="policy-item"><h3>8. Privacidad de los datos</h3><p>Los datos del formulario se incorporan al mensaje que tú decides enviar por WhatsApp o correo para responder y coordinar tu solicitud. Esta página estática no guarda los datos en una base de datos ni confirma fechas automáticamente. Al abrir la aplicación correspondiente, el tratamiento de los datos también queda sujeto a las políticas de ese servicio.</p></div>
+    </div></div>
+  </section>
+</section>
+</main>
+
+<footer><a class="brand" href="#" data-page="inicio"><span>DJ</span> PIPE<span class="brand-dot">.</span></a><p>© <span id="year"></span> DJ PIPE · FELIPE MOLINA. TODOS LOS DERECHOS RESERVADOS.</p><button class="back-top" data-page="inicio">VOLVER AL INICIO ↑</button></footer>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">×</button><img id="lightboxImage" src="" alt="Fotografía ampliada de DJ PIPE"></div>
+
+<script>
+const pages=[...document.querySelectorAll('.site-page')];
+const nav=document.getElementById('nav');
+const menuToggle=document.getElementById('menuToggle');
+function showPage(id){
+  if(!document.getElementById(id)) return;
+  pages.forEach(p=>p.classList.toggle('active',p.id===id));
+  nav.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===id));
+  nav.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded','false');
+  menuToggle.textContent='☰';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+document.querySelectorAll('[data-page]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();showPage(el.dataset.page)}));
+menuToggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰'});
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const lightbox=document.getElementById('lightbox'),lightboxImage=document.getElementById('lightboxImage');
+function openLightbox(src){lightboxImage.src=src;lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false')}
+function closeLightbox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');lightboxImage.src=''}
+document.querySelectorAll('[data-lightbox]').forEach(el=>el.addEventListener('click',()=>openLightbox(el.dataset.lightbox)));
+document.querySelectorAll('.gallery-card[data-lightbox]').forEach(el=>el.addEventListener('click',()=>openLightbox(el.dataset.lightbox)));
+document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
+lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeLightbox()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+
+const dateInput=document.getElementById('fecha');
+const now=new Date(),today=new Date(now.getTime()-now.getTimezoneOffset()*60000).toISOString().slice(0,10);
+dateInput.min=today;
+function makeBookingMessage(){
+  const form=document.getElementById('bookingForm');
+  if(!form.reportValidity()) return null;
+  if(!document.getElementById('acepta').checked){alert('Debes aceptar las políticas y condiciones.');return null}
+  const d=new FormData(form),services=d.getAll('servicios');
+  return [
+    'SOLICITUD DE FECHA — DJ PIPE','',
+    'Nombre: '+d.get('nombre'),
+    'Correo del cliente: '+d.get('email'),
+    'Fecha: '+d.get('fecha'),
+    'Tipo de evento: '+d.get('tipo'),
+    'Lugar / comuna: '+d.get('comuna'),
+    'Horario aproximado: '+(d.get('hora')||'No especificado'),
+    'Servicios: '+(services.length?services.join(', '):'No especificados'),
+    'Detalles: '+(d.get('detalles')||'Sin detalles adicionales'),
+    '',
+    'Entiendo que esta solicitud no confirma una reserva y queda pendiente de respuesta.'
+  ].join('\\n');
+}
+document.getElementById('bookingForm').addEventListener('submit',e=>{
+  e.preventDefault();const msg=makeBookingMessage();if(msg)window.open('https://wa.me/56950258000?text='+encodeURIComponent(msg),'_blank','noopener');
+});
+document.getElementById('emailSubmit').addEventListener('click',()=>{
+  const msg=makeBookingMessage();if(!msg)return;
+  location.href='mailto:djpipe.cl@gmail.com?subject='+encodeURIComponent('Solicitud de fecha - DJ PIPE')+'&body='+encodeURIComponent(msg);
+});
+</script>
+</body>
+</html>
